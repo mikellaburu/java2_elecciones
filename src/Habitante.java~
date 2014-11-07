@@ -2,14 +2,14 @@ package elecciones;
 
 public class Habitante {
 	
-//private
+//atributos
 	private String nombre;
 	private String apellido1;
 	private String apellido2;
 	private String dni;
-	private int añoNacimiento;
-	private int mesNacimiento;
-	private int diaNacimiento;
+	//private int anoNacimiento;
+	//private int mesNacimiento;
+	//private int diaNacimiento;
 	private int edad;
 	private boolean mayorEdad;
 	private String sexo;
@@ -30,14 +30,14 @@ public class Habitante {
 	public String getDni(){
 		return this.dni;
 	}
-	public int getAño(){
-		return this.añoNacimiento;
+	/*public int getAno(){
+		return this.anoNacimiento;
 	}
 	public int getMes(){
 		return this.mesNacimiento;
 	}
 	public int getDia(){
-		return this.diaNacimiento;
+		return this.diaNacimiento;*/
 	}
 	public int getEdad(){
 		return this.edad;
@@ -68,4 +68,42 @@ public class Habitante {
 	public void setApellido2(String apel2){
 		this.apellido2=apel2;;
 	}
+	public void setDni(String numIdentificacion){
+		this.dni=numIdentificacion;
+	}
+	/*public void setAno(int ano){
+		this.anoNacimiento=ano;
+	}
+	public void setMes(int mes){
+		this.mesNacimiento=mes;
+	}
+	public void setDia(int dia){
+		this.diaNacimiento=dia;*/
+	}
+	public void setEdad(int anos){
+		this.edad=anos;
+	}
+	public void setMayor(int this.getEdad()){
+		if (this.edad>=18){
+			this.mayorEdad=true;
+		}else{
+			this.mayorEdad=false;
+		}
+	}
+	public void setSexo(String sex){
+		this.sexo=sex;
+	}
+	public void setDireccion(String sitio){
+		this.direccion=sitio;
+	}
+	public void setFijo(long fijo){
+		this.tlfFijo=fijo;
+	}
+	public void setMovil(long movil){
+		this.tlfMovil=movil;
+	}
+	
 
+
+
+}
