@@ -78,6 +78,48 @@ public class Elecciones {
 				
 				case "b":
 					System.out.println("Ayuntamiento");
+					/*private String nombre;//del pueblo
+	private String tipo; //ciudad,villa,pueblo...
+	private int populacion;
+	private int censo;//numero de votantes
+	private double extension; //km2
+	private String alcalde;
+	private String gobierno;
+	private int cp;
+	private String provincia;*/
+					String nombre=" ";
+					String tipo=" ";
+					int habitatantes=0;
+					int votantes=0;
+					double area=0;
+					String alcalde=" ";
+					String partido=" ";
+					int codPost=0;
+					String provincia=" ";
+					System.out.println("DATOS DEL AYUNTAMIENTO");
+					System.out.println(" ");
+					System.out.println("Ingresa los datos");
+					System.out.print("Pueblo: ");
+					nombre=tecla.nextln();
+					System.out.print("Tipo de localidad( ciudad, villa, etc): ");
+					tipo=tecla.nextln();
+					System.out.print("Numero de habitatantes: ");
+					habitatantes=tecla.nextInt();
+					System.out.print("Numero de votantes: ");
+					votantes=tecla.nextInt();
+					System.out.print("Extension en km2: ");
+					area=tecla.nextDouble();
+					System.out.print("Nombre del alcalde: ");
+					alcalde=tecla.nextln();
+					System.out.print("Codigo Postal: ");
+					codPost=tecla.nextInt();
+					System.out.print("Provincia: ");
+					provincia=tecla.nextln();
+
+					Ayuntamiento a1=new Ayuntamiento();
+					a1.setNombre(nombre);
+					a1.setTipo(tipo);
+					a1.setPopulacion
 					break;
 				
 				case "c":
