@@ -85,16 +85,15 @@ public class Elecciones {
 					int votantes=0;
 					double area=0;
 					String alcalde=" ";
-					String partido=" ";
 					int codPost=0;
 					String provincia=" ";
 					System.out.println("DATOS DEL AYUNTAMIENTO");
 					System.out.println(" ");
 					System.out.println("Ingresa los datos");
 					System.out.print("Pueblo: ");
-					nombre=tecla.nextLine();
+					pueblo=tecla.next();
 					System.out.print("Tipo de localidad( ciudad, villa, etc): ");
-					tipo=tecla.nextLine();
+					tipo=tecla.next();
 					System.out.print("Numero de habitatantes: ");
 					habitatantes=tecla.nextInt();
 					System.out.print("Numero de votantes: ");
@@ -102,11 +101,11 @@ public class Elecciones {
 					System.out.print("Extension en km2: ");
 					area=tecla.nextDouble();
 					System.out.print("Nombre del alcalde: ");
-					alcalde=tecla.nextLine();
+					alcalde=tecla.next();
 					System.out.print("Codigo Postal: ");
 					codPost=tecla.nextInt();
 					System.out.print("Provincia: ");
-					provincia=tecla.nextLine();
+					provincia=tecla.next();
 
 					Ayuntamiento a1=new Ayuntamiento();
 					a1.setNombre(pueblo);
@@ -147,15 +146,15 @@ public class Elecciones {
 					System.out.println(" ");
 					System.out.println("Ingresa los datos");
 					System.out.print("Nombre del partido: ");
-					nomPartido=tecla.nextLine();
+					nomPartido=tecla.next();
 					System.out.print("Siglas: ");
-					siglas=tecla.nextLine();
+					siglas=tecla.next();
 					System.out.print("Ideologia: ");
-					idea=tecla.nextLine();
+					idea=tecla.next();
 					System.out.print("Numero de afiliados: ");
 					miembros=tecla.nextInt();
 					System.out.print("Nombre del candidato: ");
-					candidato=tecla.nextLine();
+					candidato=tecla.next();
 					
 					Partido p1=new Partido();
 					p1.setNombre(nomPartido);
@@ -196,19 +195,19 @@ public class Elecciones {
 					System.out.println(" ");
 					System.out.println("Ingresa los datos");
 					System.out.print("Pueblo: ");
-					nomPueblo=tecla.nextLine();
+					nomPueblo=tecla.next();
 					System.out.print("Calle o Barrio: ");
-					calle=tecla.nextLine();
+					calle=tecla.next();
 					System.out.print("Nº de portal: ");
 					portal=tecla.nextInt();
 					System.out.print("Piso: ");
 					piso=tecla.nextInt();
 					System.out.print("Puerta: ");
-					puerta=tecla.nextLine();
+					puerta=tecla.next();
 					System.out.print("Es habitable?(si/no) ");
-					habitable=tecla.nextLine();
+					habitable=tecla.next();
 					System.out.print("Tipo de local(piso,apartamento,villa,garaje...): ");
-					tipoLocal=tecla.nextLine();
+					tipoLocal=tecla.next();
 					System.out.print("Cuantos metros cuadrados tiene? ");
 					metros2=tecla.nextDouble();
 					
@@ -221,14 +220,54 @@ public class Elecciones {
 					i1.setHabitable(habitable);
 					i1.setTipoLocal(tipoLocal);
 					i1.setMetros(metros2);
-					
-					
+					System.out.println("Datos introducidos del Inmueble");
+					System.out.println("Pueblo: "+i1.getPueblo());
+					System.out.println("Barrio o calle: "+i1.getCalle());
+					System.out.println("Portal: "+i1.getNumPortal());
+					System.out.println("Piso: "+i1.getPiso());
+					System.out.println("Puerta: "+i1.getPuerta());
+					System.out.println("Es habitable: ");
+					if (i1.getHabitable()){
+						System.out.println("SI");
+					}else{
+						System.out.println("NO ");
+					}
+					System.out.println("Tipo de local: "+i1.getTipoLocal());
+					System.out.println("Metros cuadrados: "+i1.getMetros());
 					break;
 				
 				case "e":
 					System.out.println("Espacio Publico");
-					
-					
+					/*private String tipo;//tipo de espacio, escuela, playa, parque, ...
+		private String municipio;
+		private String direccion;
+		private double extension;//m2*/
+					String tipoEspacio=" ";
+					String municipio=" ";
+					String donde=" ";
+					double extension=0;
+					System.out.println("DATOS DEL ESPACIO PUBLICO");
+					System.out.println(" ");
+					System.out.println("Ingresa los datos");
+					System.out.print("Tipo: ");
+					tipoEspacio=tecla.next();
+					System.out.print("Pueblo: ");
+					municipio=tecla.next();
+					System.out.print("Direccion: ");
+					donde=tecla.next();
+					System.out.print("Extension en metros2: ");
+					extension=tecla.nextDouble();
+															
+					EspacioPublico e1=new EspacioPublico();
+					e1.setTipo(tipoEspacio);
+					e1.setMunicipio(municipio);
+					e1.setDireccion(donde);
+					e1.setExtension(extension);
+					System.out.println("Datos introducidos del espacio publico");
+					System.out.println("Tipo de espacio: "+e1.getTipo());
+					System.out.println("Pueblo: "+e1.getMunicipio());
+					System.out.println("Direccion: "+e1.getDireccion());
+					System.out.println("Extension: "+e1.getExtension());
 					break;
 					
 				case "x":

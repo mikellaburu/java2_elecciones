@@ -1,43 +1,46 @@
 package elecciones;
 
 public class Partido {
-		//atributos
-		private String barrio;
-		private String calle;
-		private int numPortal;
-		private int piso;
-		private int puerta;
-		private boolean habitable;
-		private String tipoLocal;
-		private double metros;
-		private boolean soleado;
-		
-		//getters
-		public String getBarrio(){
-			return this.barrio;
-		}
-		public String getCalle(){
-			return this.calle;
-		}
-		public int getNumPortal(){
-			return this.numPortal;
-		}
-		public int getPiso(){
-			return this.piso;
-		}
-		public int getPuerta(){
-			return this.puerta;
-		}
-		public boolean getHabitable(){
-			return this.habitable;
-		}
-		public String getTipoLocal(){
-			return this.tipoLocal;
-		}
-		public double getMetros(){
-			return this.metros;
-		}
-		public boolean getSoleado(){
-			return this.soleado;
-		}
+	//atributos
+	private String nombre;
+	private String siglas;
+	private String ideologia;
+	private int miembros;
+	private String candidato;
+	
+	//getters
+	public String getNombre(){
+		return this.nombre;
+	}
+	public String getSiglas(){
+		return this.siglas;
+	}
+	public String getIdeologia(){
+		return this.ideologia;
+	}
+	public int getMiembros(){
+		return this.miembros;
+	}
+	public String getCandidato(){
+		return this.candidato;
+	}
+	
+	//setters
+	public void setNombre(String denominacion){
+		this.nombre=denominacion;
+	}
+	public void setSiglas(String iniciales){
+		this.siglas=iniciales;
+	}
+	public void setIdeologia(String idea){
+		this.ideologia=idea;
+	}
+	public void setMiembros(int afiliados){
+		this.miembros=afiliados;
+	}
+	public void setCandidato(String presidente){
+		this.candidato=presidente;
+	}
+	
 }
+

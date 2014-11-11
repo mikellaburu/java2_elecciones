@@ -1,5 +1,3 @@
-package elecciones;
-
 public class Habitante {
 	//atributos
 		private String nombre;

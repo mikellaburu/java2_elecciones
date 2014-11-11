@@ -1,5 +1,3 @@
-package elecciones;
-
 public class EspacioPublico {
 	//atributos
 	private String tipo;//tipo de espacio, escuela, playa, parque, ...

@@ -1,5 +1,3 @@
-package elecciones;
-
 public class Ayuntamiento {
 	//Atributos
 	private String nombre;//del pueblo

@@ -1,5 +1,3 @@
-package elecciones;
-
 public class Partido {
 	//atributos
 	private String nombre;
